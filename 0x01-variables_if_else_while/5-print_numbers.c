@@ -4,7 +4,7 @@
 /**
 * main - Entry point
 *
-* Description:  print the letters of the alphabet except e, q
+* Description: print the single digits of base 10
 *
 * Return: Always 0 (Success)
 */
@@ -13,7 +13,7 @@ int main(void)
 int i;
 for (i = 0; i < 10; ++i)
 {
-printf("%d\n", i);
+printf("%i", i);
 }
 return (0);
 }
