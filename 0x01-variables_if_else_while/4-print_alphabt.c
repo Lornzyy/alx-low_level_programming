@@ -4,15 +4,20 @@
 /**
 * main - Entry point
 *
+* Description:  print the letters of the alphabet except e, q
+*
 * Return: Always 0 (Success)
 */
 int main(void)
 {
-char c, m;
+char c;
 for (c = 'a'; c <= 'z'; ++c)
+{
+if (c != 'e' && c != 'q')
+{
 putchar(c);
- 
-putchar(m);
+}
+}
 putchar('\n');
 return (0);
 }
