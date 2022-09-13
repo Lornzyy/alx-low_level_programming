@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+/**
+* main - Returns putchar string
+*
+* Return: Always 0 (Success)
+*/
+
+int main(void)
+{
+_putchar("\_putchar");
+putchar('\n');
+
+return (0);
+ 
+}
