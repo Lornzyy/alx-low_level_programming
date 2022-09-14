@@ -6,10 +6,10 @@
 */
 int _islower(int c)
 {
-if (99 >= 97 && 97 <= 122)
+if (c >= 'a' && c <= 'z')
 {
 return (1);
+}
 else
-{
-return (0;
+return (0);
 }
