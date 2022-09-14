@@ -9,7 +9,7 @@ int number, multiply, product;
 for (number = 0; number <= 9; number++)
 {
 _putchar('0');
-for (multiply = 0; multiply <= 9; multiply++)
+for (multiply = 1; multiply <= 9; multiply++)
 {
 _putchar(',');
 _putchar(' ');
