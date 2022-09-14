@@ -2,7 +2,7 @@
 /**
 * _abs - function to calculate absolute value of an integer
 * @c: The integer used for the argument of the function
-* Return - 0
+* Return: - 0
 */
 int _abs(int c)
 {
@@ -12,5 +12,4 @@ return (c);
 }
 else
 return (c * -1);
-}  
-  
+}
