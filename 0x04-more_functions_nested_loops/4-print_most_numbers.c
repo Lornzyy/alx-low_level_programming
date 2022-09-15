@@ -12,7 +12,6 @@ if (c != 2 && c != 4)
 {
 _putchar(c);
 }
-else
-_putchar (' ');
+_putchar('\n');
 }
 }
