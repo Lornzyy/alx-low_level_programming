@@ -9,17 +9,17 @@ int main(void)
 int i;
 for (i = 0; i <= 100; i++)
 {
-if (i / 3)
+if ((i % 3) == 0)
 {
-printf("Fizz");
+printf("Fizz ");
 printf(" ");
 }
-else if (i / 5)
+else if ((i % 5) == 0)
 {
-printf("Buzz");
+printf("Buzz ");
 printf(" ");
 }
-else if (i / 3 && i / 5)
+else if ((i / 3 == 0)&& (i % 5==0))
 {
 printf("FizzBuzz");
 }
