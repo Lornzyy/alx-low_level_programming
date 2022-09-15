@@ -11,21 +11,21 @@ for (i = 0; i <= 100; i++)
 {
 if (i / 3)
 {
-putchar('Fizz');
-putchar(' ');
+printf("Fizz");
+printf(" ");
 }
 else if (i / 5)
 {
-putchar('Buzz');
-putchar(' ');
+printf("Buzz");
+printf(" ");
 }
 else if (i / 3 && i / 5)
 {
-putchar('FizzBuzz');
+printf("FizzBuzz");
 }
 else
 {
-putchar(i);
-putchar(' ');
+printf("%d", i);
+printf(" ");
 }
 }
