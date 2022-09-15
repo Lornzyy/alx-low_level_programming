@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
 * print_square - function to print square
@@ -11,7 +12,7 @@ if (size > 0)
 {
 for (length1 = 0; length1 < size; length1++)
 {
-for (length2 = 0; length2 < (size - length1); length2++)
+for (length2 - 0; length2 < (size - length1); length2++)
 {
 _putchar('#');
 }
