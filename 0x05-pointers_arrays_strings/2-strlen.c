@@ -9,7 +9,6 @@
 
 int _strlen(char *s)
 {
-s = "trial";
 
 printf("The length of 's' is: %ld", strlen(s));
 
