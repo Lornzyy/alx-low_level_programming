@@ -10,7 +10,7 @@
 int _strlen(char *s)
 {
 int length;
-length = strlen(s);
+length = strlen(*s);
 printf("The length of %d = %d", *s, length);
 
 return (0);
