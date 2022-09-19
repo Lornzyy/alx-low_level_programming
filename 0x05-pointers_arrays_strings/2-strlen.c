@@ -10,8 +10,10 @@
 int _strlen(char *s)
 {
 int length = 0;
-length = strlen(s);
-printf("The length of %d = %i", *s, length);
+while (*(s + length) != '\0';
+{
+length ++;
+}  
 
 return (length);
  
