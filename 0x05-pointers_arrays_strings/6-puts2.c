@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* puts - function to print every character of a string
+* puts2 - function to print every character of a string
 * @str: parameter to print individual character
 */
 void puts2(char *str)
