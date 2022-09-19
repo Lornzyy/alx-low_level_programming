@@ -15,7 +15,7 @@ length++;
 }
 while (length--)
 {
-_putchar(*(s + (length)));
+putchar(*(s + (length)));
 }
-_putchar('\n');
+putchar('\n');
 }
