@@ -1,0 +1,30 @@
+#include "main.h"
+
+/**
+ * _strcmp - function to find comparison between strings
+ * @s1: first string
+ * @s2: second string
+ * Return: if equals 0,
+ *         if s1 > than s2 positive and
+ *         if less a negative difference
+ */
+
+int _strcmp(char *s1, char *s2)
+{
+int f = 0;
+while (*s1 != '\0' || *s2 != '\0')
+{
+if (*s1 != *s2)
+{
+f = 1;
+break;
+}
+s1++;
+s2++;
+}
+if (f == 0 || f < 0 || f > 0)
+{
+return (*s1 - *s2);
+}
+return (*s1 - *s2);
+}
