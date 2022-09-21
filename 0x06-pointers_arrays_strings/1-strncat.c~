@@ -1,0 +1,29 @@
+#include "main.h"
+
+/**
+ * _strncat - function to concatenate
+ * @dest: destination of string
+ * @src: the start of the string
+ * @n: number of bytes
+ * Return: dest
+ */
+
+char *_strncat(char *dest, char *src, int n)
+{
+
+int dest_length = strlen(dest);
+int src_length = strlen(src);
+char *dest1 = calloc(n, sizeof(char));
+n = dest_length + src_length + 1;
+
+int i;
+for (i = 0; i < dest_length; i++)
+dest1[i] = dest[i];
+
+for (i = 0; i < src_length; i++)
+dest1[dest_length + 1] = src[i];
+
+dest1[n - 1] = '\0';
+
+return (dest1);
+}
