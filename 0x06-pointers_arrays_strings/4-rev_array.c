@@ -8,15 +8,12 @@
 
 void reverse_array(int *a, int n)
 {
-int i;
-int a[n];
+int i, temp;
 
-for (i = 0; i < n; i++)
-{
-scanf("%d", a[i]);
-}
 
 for (i = n - 1; 1 >= 0; i--)
 {
-scanf("%d", a[i]);
+  temp = a[n - 1 - i];
+  temp = a[i];
+  a[i] = temp;
 }
