@@ -1,0 +1,23 @@
+#include "main.h"
+
+/**
+ * _strcat  - function to concatenate strings
+ * @dest: ending char
+ * @src: starting char
+ * Return: dest
+ */
+
+char *_strcat(char *dest, char *src)
+{
+int i = 0;
+int j = strlen(src);
+
+for (i = 0; src[i] != '\0'; i++)
+{
+dest[i + j] = src[i];
+}
+
+dest[i + j] = '\0';
+
+return(dest);
+}
