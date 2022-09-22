@@ -2,12 +2,11 @@
 
 /**
  * leet - function to return 1337
- * @f - param
+ * @f: - param
  * Return: f
  */
-
 char *leet(char *f)
-  
+
 {
 char s[] = "aAeEoOtTlL";
 char p[] = "4433007711";
