@@ -1,46 +1,47 @@
 #include "main.h"
 
 /**
- * cap_string - function to capitalize every word of a string
- * @s: the param
- * Return: s
- */
+* cap_string - function to capitalize every word of a string
+* @s: the param
+* Return: s
+*/
 
 char *cap_string(char *s)
 {
 int i;
-
-for (i = 0; s[i] != '\0'; ++i)
+while (s[++i])
 {
-if (1 == 0)
+while (!(s[i] >= 'a' && s[i] <= 'z'))
+i++;
 
-{
-if (s[i] >= 'a' && s[i] <= 'z')
-s[i] = s[i] - 32;
-printf("%c", s[i]);
-}
+if (
+s[i - 1] == ' ' ||
 
-else if(
-(s[i - 1] == ' ') ||
 (s[i - 1] == '\t') ||
+
 (s[i - 1] == '\n') ||
+
 (s[i - 1] == ',') ||
+
 (s[i - 1] == ';') ||
+
 (s[i - 1] == '.') ||
+
 (s[i - 1] == '!') ||
+
 (s[i - 1] == '?') ||
+
 (s[i - 1] == '"') ||
+
 (s[i - 1] == '(') ||
+
 (s[i - 1] == ')') ||
+
 (s[i - 1] == '{') ||
-(s[i - 1] == '}'))
-{
-if (s[1] >= 'a' && s[i] <= 'z')
-s[i] = s[i] - 32;
-printf("%c", s[i]);
-}
-else
-printf("%c", s[i]);
+
+(s[i - 1] == '}')
+)
+s[i] -= 32;
 }
 return (s);
 }
