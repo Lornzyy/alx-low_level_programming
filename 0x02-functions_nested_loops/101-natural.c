@@ -16,6 +16,6 @@ if ((n % 3 == 0) || (n % 5 == 0))
 z += n;
 }
 }
-printf("%d", z);
+printf("%d\n", z);
 return (0);
 }
