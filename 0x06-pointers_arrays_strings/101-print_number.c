@@ -2,7 +2,7 @@
 
 /**
  * print_number - function to print no using _putchar
- * @n:integer
+ * @n: integer
  */
 
 void print_number(int n)
