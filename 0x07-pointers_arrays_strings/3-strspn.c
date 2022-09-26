@@ -10,25 +10,17 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-int i, j;
-int len1 = strlen(accept);
-int len2 = strlen(s);
-size_t length = 0;
-bool found = false;
+unsigned int i, j;
 
-for (i = 0; i < len1; i++)
+for (i = 0; s[i]; i++)
 {
-for (j = 0; j < len2; j++)
-
-if (s[j] == accept[i])
+for (j = 0; accept[j]; j++)
 {
-found = true;
+if (s[i] == accept[j])
 break;
 }
-if (found != true)
+if (!accept[j])
 break;
-else
-length++;
 }
-return (length);
+return (i);
 }
