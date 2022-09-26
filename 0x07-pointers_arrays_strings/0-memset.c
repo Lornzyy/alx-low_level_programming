@@ -9,10 +9,10 @@
 
 char *_memset(char *s, char b, unsigned int n)
 {
-int i;
+unsigned int i;
 memset(s, b, (sizeof(char) * n));
 
-for (i = 0; i < 10; i++)
+for (i = 0; i < n; i++)
 {
 printf("%c", s[i]);
 
