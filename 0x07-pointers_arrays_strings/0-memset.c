@@ -14,8 +14,7 @@ memset(s, b, (sizeof(char) * n));
 
 for (i = 0; i < n; i++)
 {
-printf("%c", s[i]);
-
+s[i] = b;
 }
 return (s);
 }
