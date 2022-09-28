@@ -1,0 +1,46 @@
+#include "main.h"
+
+/**
+ * prime_no - find put is prime number
+ * @n: the number to check
+ * @i: iterator
+ * Return: 1 if n is aprime number and 0 if n is not
+ */
+
+int prime_no(unsigned int n, unsigned int i)
+{
+if (n % i == 0)
+{
+if (n == i)
+{
+return (1);
+}
+else
+return (0);
+}
+return (prime_no(n, i + 1));
+}
+
+/**
+ * is_prime_number - find if input is a prime number
+ * @n: interger to look at
+ * Return: 1 if integer is prime
+ *         0 if integer is not prime
+ */
+
+int is_prime_number(int n)
+{
+if (n == 0)
+{
+return (0);
+}
+if (n < 0)
+{
+return (0);
+}
+if (n == 1)
+{
+return (0);
+}
+return (prime_no(n, 2));
+}
