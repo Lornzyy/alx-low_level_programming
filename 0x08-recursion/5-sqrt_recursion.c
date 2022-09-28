@@ -8,19 +8,19 @@
  *         the number when it has a sqrt
  */
 
-int square (int x, int n)
+int _square(int x, int n)
 {
 if ((x * x) == n)
 {
 return (x);
 }
-else if ( x > (n / 2))
+else if (x > (n / 2))
 {
 return (-1);
 }
 else
 {
-return square(x + 1, n);  
+return (_square(x + 1, n));
 }
 }
 
@@ -31,5 +31,5 @@ return square(x + 1, n);
  */
 int _sqrt_recursion(int n)
 {
-return (square(1, n));
+return (_square(1, n));
 }
