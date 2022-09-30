@@ -1,0 +1,27 @@
+#include "main.h"
+#include <stdlib.h>
+
+/**
+ * main - multiply arguments
+ * @argc: argument count
+ * @argv: array of the strings
+ * Return: Always 0
+ */
+
+int main(int argc, char *argv[])
+{
+int mul;
+
+if (argc == 3)
+{
+mul = atoi(argv[1]) * atoi(argv[2]);
+
+printf("%d\n", mul);
+return (0);
+}
+else
+{
+printf("Error\n");
+return (1);
+}
+}
