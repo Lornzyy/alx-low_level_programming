@@ -1,6 +1,4 @@
 #!/bin/bash
-
-gcc -c *c 
-
+gcc -c *c
 ar rcs liballa *.o
 
