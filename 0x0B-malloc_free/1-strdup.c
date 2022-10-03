@@ -32,6 +32,10 @@ char *_strdup(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
+		if (duplicate == NULL)
+		{
+			return (NULL);
+		}
 		duplicate[i] = str[i];
 	}
 	duplicate[i] = '\0';
