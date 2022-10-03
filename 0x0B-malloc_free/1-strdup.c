@@ -1,27 +1,32 @@
-
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * _strdup - to print duplicate string
- * @str - pointer
+ * @str: - pointer
  * Return: char pointer
  */
 
 char *_strdup(char *str)
 {
-	char *duplicate;
+	char *dup;
 	int i;
 	int length = 0;
 
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+	/* check to see for thelength */
 	while (str[length] != '\0')
 	{
 		length++;
 	}
 	/* check for size in bytes using malloc */
-	duplicate = malloc(length * sizeof(char) + 1);
+	dup = malloc((length * sizeof(char)) + 1);
 
 	/* avoid duplicating a '\0' */
-	if (duplicate  == NULL)
+	if (dup == NULL)
 	{
 		return (NULL);
 	}
@@ -29,10 +34,10 @@ char *_strdup(char *str)
 	/* duplicate the string */
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		duplicate[i] = str[i];
+		dup[i] = str[i];
 	}
-	duplicate = '\0';
+	dup[i] = '\0';
 
-	return (duplicate);
-	free(duplicate);
+	return (dup);
+	free(dup);
 }
