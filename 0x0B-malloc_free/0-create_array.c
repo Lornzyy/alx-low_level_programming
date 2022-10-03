@@ -15,15 +15,15 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0)
 	{
-		printf("0");
+		return (NULL);
 	}
-	else
-		ptArray = malloc(size * sizeof(char));
 
-	for (i = 0; i < size;i++)
+	ptArray = malloc(size * sizeof(char));
+	for (i = 0; i < size; i++)
 	{
 		ptArray[i] = c;
 	}
 
 	return (ptArray);
 }
+
