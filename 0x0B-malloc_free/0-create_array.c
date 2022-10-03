@@ -21,6 +21,10 @@ char *create_array(unsigned int size, char c)
 	ptArray = malloc(size * sizeof(char));
 	for (i = 0; i < size; i++)
 	{
+		if (ptArray == NULL)
+		{
+			return (NULL);
+		}
 		ptArray[i] = c;
 	}
 
