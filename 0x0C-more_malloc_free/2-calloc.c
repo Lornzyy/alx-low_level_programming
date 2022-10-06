@@ -15,7 +15,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
-	arry = (void *)malloc(size * sizeof(int));
+	arry = (void *)malloc((nmemb * size) * sizeof(int));
 	if (arry == NULL)
 		return (NULL);
 
