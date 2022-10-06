@@ -8,16 +8,24 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *arry;
+	char *arry;
+	unsigned int i;
 
 	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
 
-	arry = (void *)malloc((nmemb * size) * sizeof(int));
+	arry = (void *)malloc(nmemb * (size));
 	if (arry == NULL)
+	{
 		return (NULL);
+	}
 
+	for (i = 0; i < (size * nmemb); i++)
+	{
+		arry[i] = 0;
+	}
 	return (arry);
 }
+
