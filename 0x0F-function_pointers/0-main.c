@@ -10,6 +10,10 @@
 void print_name_as_is(char *name)
 {
 	printf("Hello, my name is %s\n", name);
+	if (strlen(name) == 0)
+	{
+		printf("No name was inseted");
+	}
 }
 
 /**
@@ -46,7 +50,8 @@ void print_name_uppercase(char *name)
 int main(void)
 {
 	print_name("Bob", print_name_as_is);
-	print_name("Bob Dylan", print_name_uppercase);
+	print_name("Bob Dylan\n", print_name_uppercase);
+	print_name(" ", print_name_as_is);
 	printf("\n");
 
 	return (0);
