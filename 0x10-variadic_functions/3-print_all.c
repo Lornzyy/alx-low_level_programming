@@ -58,7 +58,7 @@ void print_s(va_list s)
 void print_all(const char * const format, ...)
 {
 	unsigned int i = 0, j = 0;
-	print_format p [] = {
+	print_format p[] = {
 		{"c", print_c},
 		{"i", print_i},
 		{"f", print_f},
