@@ -10,8 +10,8 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 	char *duplicate;
 	unsigned int count = 0;
-	list_t *newnode;
-	list_t *temp;
+	list_t *newnode, *temp;
+
 	temp = *head;
 
 	newnode = (list_t *)malloc(sizeof(list_t));
