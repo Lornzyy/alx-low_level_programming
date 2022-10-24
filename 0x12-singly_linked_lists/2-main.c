@@ -12,10 +12,12 @@ int main(void)
 
 	head = NULL;
 
-	add_node(&head, "Alex");
-	add_node(&head, "Lorna");
-	add_node(&head, "Wawoi");
-	add_node(&head, "Zee");
+	add_node_end(&head, "Alex");
+	add_node_end(&head, "Lorna");
+	add_node_end(&head, "Wawoi");
+	add_node_end(&head, "Zee");
+	print_list(head);
+	
 	return (0);
 }
 
