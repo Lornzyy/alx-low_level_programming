@@ -12,11 +12,11 @@ int main(void)
 
 	head = NULL;
 
-	add_nodeint(&head,42);
-	add_nodeint(&head, 98);
-	add_nodeint(&head, 102);
-	add_nodeint(&head, 496);
-	add_nodeint(&head, 1024);
+	add_nodeint_end(&head,42);
+	add_nodeint_end(&head, 98);
+	add_nodeint_end(&head, 102);
+	add_nodeint_end(&head, 496);
+	add_nodeint_end(&head, 1024);
 	print_listint(head);
 	/*free_list(head);*/
 	head = NULL;
