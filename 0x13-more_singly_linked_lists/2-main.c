@@ -8,17 +8,17 @@
 
 int main(void)
 {
-	list_t *head;
+	listint_t *head;
 
 	head = NULL;
 
-	add_node_end(&head, "Alex");
-	add_node_end(&head, "Lorna");
-	add_node_end(&head, "Wawoi");
-	add_node_end(&head, "Zee");
-	add_node_end(&head, "lilian");
-	print_list(head);
-	free_list(head);
+	add_nodeint(&head,42);
+	add_nodeint(&head, 98);
+	add_nodeint(&head, 102);
+	add_nodeint(&head, 496);
+	add_nodeint(&head, 1024);
+	print_listint(head);
+	/*free_list(head);*/
 	head = NULL;
 	
 	return (0);
