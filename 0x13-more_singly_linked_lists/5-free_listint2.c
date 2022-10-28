@@ -1,19 +1,20 @@
 #include "lists.h"
 
 /**
- * free_listint - free the list
+ * free_listint2 - free the list
  * @head: the pointer to the list_t
  * Return: Nothing
  */
-void free_listint(listint_t *head)
+void free_listint2(listint_t **head)
 {
-	listint_t *temp, *current;
+	listint_t *temp;
+	listint_t *current;
 
-	current = *head;
 	if (head == NULL)
 	{
 		return (NULL);
 	}
+	current = *head;
 	while (current != NULL)
 	{
 		temp = current;
