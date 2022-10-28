@@ -5,15 +5,22 @@
  * @head: the pointer to the list_t
  * Return: Nothing
  */
-
-void free_listint2(listint_t **head)
+void free_listint(listint_t *head)
 {
-	listint_t *temp;
+	listint_t *temp, *current;
 
-	while (head != NULL)
+	current = *head;
+	if (head == NULL)
 	{
-		head = head->next;
+		return (NULL);
+	}
+	while (current != NULL)
+	{
+		temp = current;
+		current = temp->next;
 		free(temp);
 	}
+	*head = NULL;
+	head = NULL;
 }
 
