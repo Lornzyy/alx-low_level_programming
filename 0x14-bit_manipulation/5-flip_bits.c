@@ -3,7 +3,7 @@
 /**
  * flip_bits - flip through numbers
  * @n: the first number to flip through
- * @m the second number to get tp
+ * @m: the second number to get tp
  * Return: the number of bits flipped to get to second number
  */
 
@@ -18,7 +18,6 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 		{
 			flip_num++;
 		}
-		result = result >> 1;
 	}
 	return (flip_num);
 }
