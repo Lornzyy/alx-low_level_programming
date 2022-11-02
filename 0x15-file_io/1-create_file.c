@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * create_file - create a file
+ * create_file - function that creates a file
  * @filename: name of the file
  * @text_content: content of the file
- * Return the file created
+ * Return: the file created
  */
 int create_file(const char *filename, char *text_content)
 {
